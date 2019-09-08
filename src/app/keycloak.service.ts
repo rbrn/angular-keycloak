@@ -10,16 +10,17 @@ export class KeycloakService {
   private keycloakAuth: any;
 
   constructor() { }
-
   init(): Promise<any> {
     return new Promise((resolve, reject) => {
       const config = {
-        'url': 'http://localhost:8080/auth',
-        'realm': 'example',
-        'clientId': 'my-app'
+        'url': 'http://localhost:9080/auth',
+        'realm': 'jhipster',
+        'clientId': 'web_app'
       };
+
       this.keycloakAuth = new Keycloak(config);
-      this.keycloakAuth.init({ onLoad: 'login-required' })
+
+      this.keycloakAuth.init({ onLoad: 'login-required'})
         .success(() => {
           resolve();
         })
