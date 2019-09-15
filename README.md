@@ -4,7 +4,7 @@ Angular 7 example project to explore the usage of keycloak as an authentication 
 
 ## Pre-requisites
 
-Have a keycloak instance running and update your configuration on the init function inside `keycloak.service.ts`.
+Have a keycloak instance running and update your configuration on the init function inside `keycloak-local.service.ts`.
 
 Alternatively setup a new Keycloak server using Docker:
 

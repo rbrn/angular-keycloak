@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { KeycloakService } from './keycloak.service';
+import { KeycloakLocalService } from './keycloak-local.service';
 
-describe('KeycloakService', () => {
+describe('KeycloakLocalService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: KeycloakService = TestBed.get(KeycloakService);
+    const service: KeycloakLocalService = TestBed.get(KeycloakLocalService);
     expect(service).toBeTruthy();
   });
 });
